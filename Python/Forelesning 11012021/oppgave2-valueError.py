@@ -1,6 +1,3 @@
-from os import truncate
-
-
 try:
     tallFil=open('tullballiversen.txt','r')
     sum=0

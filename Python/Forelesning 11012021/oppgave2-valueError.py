@@ -9,7 +9,7 @@ try:
             tall=int(tall)
             sum=sum+tall
         except ValueError:
-            print('Støtet feil tilknyttet verditype på datasettet. Sannsynligvis bokstav når programmet forventet tall')
+            print('Støtet på feil tilknyttet verditype på datasettet. Sannsynligvis bokstav når programmet forventet tall')
             print('Avslutter summering. Summen så langt er:',sum)
             feil=True
         tall=tallFil.readline()

@@ -7,7 +7,6 @@ print('Lista før sortering er:      ',usortert)
 print()
 print()
 
-sortert=[]
 storste_tall=0
 i=0
 while i !=(len(usortert)):

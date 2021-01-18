@@ -6,20 +6,23 @@ print('Lista før sortering er:      ',usortert)
 print()
 print()
 
-storste_tall=0
+minste_tall=max(usortert)
 i=0
 total=0
+sortert=[]
 
-while i !=len(usortert):
-    for n in range(0,(len(usortert)-1)-i):   #kudos til @terje for den -i'en der asså! 
-        if usortert[n]>=usortert[n+1]:
-            storste_tall=usortert[n]
-            usortert[n]=usortert[n+1]
-            usortert[n+1]=storste_tall
+while usortert:
+    for n in range(0,(len(usortert)-1)): 
+        if usortert[n]<=minste_tall:
+            minste_tall=usortert[n]
         total+=1
-    i+=1
+    sortert+=[minste_tall]
+    usortert.remove(minste_tall)
+    if usortert:
+        minste_tall=max(usortert)    
     total+=1
-    
-print('Den sorterte listen er:',usortert)
+    i+=1
+
+print('Den sorterte listen er:',sortert)
 print('Algoritmen er kjørt',i,'ganger')
 print('Antall operasjoner er:',total)

@@ -6,20 +6,24 @@ print('Lista før sortering er:      ',usortert)
 print()
 print()
 
-storste_tall=0
-i=0
+
 total=0
 
-while i !=len(usortert):
-    for n in range(0,(len(usortert)-1)-i):   #kudos til @terje for den -i'en der asså! 
-        if usortert[n]>=usortert[n+1]:
-            storste_tall=usortert[n]
-            usortert[n]=usortert[n+1]
-            usortert[n+1]=storste_tall
+
+for i in range(len(usortert)):
+    cursor=usortert[i]
+    position=i
+
+    #sjekker om alle foregående posisjoner har mindre verdier enn seleksjonen. 
+    while position > 0 and usortert[position-1] > cursor:
+        usortert[position] = usortert[position-1]
+        position=position-1
         total+=1
-    i+=1
+
+    usortert[position]=cursor
     total+=1
-    
+
+
 print('Den sorterte listen er:',usortert)
 print('Algoritmen er kjørt',i,'ganger')
 print('Antall operasjoner er:',total)

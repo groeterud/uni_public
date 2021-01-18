@@ -20,6 +20,44 @@ SELECT Kategori
 FROM vare;
 
 -- Fjerne duplikater
-SELECT DISTINCT 
-       Kategori
+SELECT DISTINCT Kategori
 FROM vare;
+
+-- plukke ut varer i kategorien fiske  
+SELECT *
+FROM vare
+WHERE Kategori='Fiske';
+
+-- Standarden er case-sensitiv, det er ikke MySQL.
+SELECT * 
+FROM vare
+WHERE Kategori='fiske';
+
+-- Generell løsning
+SELECT *
+FROM vare
+WHERE UPPER(Kategori)='FISKE';
+
+-- Tallutrykk
+SELECT * 
+FROM vare
+WHERE Pris<100;
+
+SELECT * 
+FROM vare
+WHERE Pris>=100;
+
+-- To betingelser
+SELECT * 
+FROM vare
+WHERE (Pris>=100) AND (Pris<=200);
+
+-- Spørring på NULL
+SELECT *
+FROM vare
+WHERE Hylle IS NULL;
+
+-- Ignorer rader med NULL i følgende kategori:
+SELECT * 
+FROM vare
+WHERE Hylle IS NOT NULL;

@@ -61,3 +61,8 @@ WHERE Hylle IS NULL;
 SELECT * 
 FROM vare
 WHERE Hylle IS NOT NULL;
+
+SELECT LEFT(Hylle,1) AS Seksjon, Kategori, COUNT(*) AS Antall
+FROM Vare
+WHERE Hylle IS NOT NULL
+GROUP BY LEFT(Hylle,1),Kategori;

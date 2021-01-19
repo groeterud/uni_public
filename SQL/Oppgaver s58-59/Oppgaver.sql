@@ -31,7 +31,7 @@ SELECT DISTINCT Land
 FROM film 
 ORDER BY Land ASC;
 
-
+-- JEG HAR GJORT EN ENDRING
 
 -- f 
 -- korteste og lengste spilletid innen hver sjanger

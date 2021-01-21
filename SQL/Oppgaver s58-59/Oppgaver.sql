@@ -5,11 +5,11 @@ FROM film;
 -- All informasjon om filmer produsert i 1988
 SELECT * 
 FROM film
-WHERE År='1988';
+WHERE År=1988;
 
 -- b
 -- Tittel på amerikanske filmer produsert på 1980-tallet
-SELECT Tittel
+SELECT Tittel AS TittelPåAmerikanseFilmer
 FROM film
 WHERE Land='USA';
 
@@ -21,7 +21,7 @@ WHERE Alder<=10 AND Tid<=130;
 
 -- d
 -- Tittel på alle action og western
-SELECT Tittel 
+SELECT Tittel
 FROM film
 WHERE Sjanger='Western' OR Sjanger='Action';
 
@@ -52,7 +52,7 @@ FROM film
 WHERE Pris<100;
 
 -- i
--- Filmer med tittel som slitter på now
+-- Filmer med tittel som slutter på now
 SELECT *
 FROM film
 WHERE Tittel LIKE '%now';

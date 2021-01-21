@@ -84,3 +84,59 @@ WHERE UCASE(LEFT(Betegnelse,1))='M';
 SELECT * 
 FROM Vare
 WHERE LOWER(Betegnelse) LIKE '%marsipan%';
+
+
+-- SORTERING
+-- ASC/Stigende			DESC/Synkende
+SELECT *
+FROM Vare
+ORDER BY Kategori ASC, Pris DESC;
+
+
+-- Mengdefunksjoner
+-- Gjennomsnitt
+SELECT ROUND(AVG(Pris),2) AS GjennomsnittsprisFiske
+FROM Vare
+WHERE UCASE(Kategori)='FISKE';
+
+-- Mengdefunksjoner
+-- Gjennomsnitt for hver kategori
+SELECT Kategori,ROUND(AVG(Pris),2) AS Gjennomsnittspris
+FROM Vare
+GROUP BY Kategori;
+
+-- Gjennomsnitt per hylleseksjon, for å vise at du kan gruppere med aliaser, selv om du ikke kan selektere på det. 
+SELECT LEFT(Hylle,1) AS Hylleseksjon, ROUND(AVG(Pris),2) AS Gjennomsnittspris
+FROM Vare
+GROUP BY Hylleseksjon;
+
+-- Gjennomsnitt, minste og største pris per kategori
+SELECT Kategori,
+	ROUND(AVG(Pris),2) AS Gjennomsnittspris,
+    MIN(Pris) AS Billigste,
+    MAX(Pris) AS Dyreste
+FROM Vare
+GROUP BY Kategori;
+
+-- OPPTELLING, antall varer i kategoriene 'Blomsterfrø' og 'Blomsterløker'
+SELECT COUNT(*) AS AntallBlomsterVarer, Kategori
+FROM Vare
+WHERE (Kategori='Blomsterfrø' OR Kategori='Blomsterløker')
+GROUP BY Kategori;
+
+SELECT COUNT(*) AS AntallBlomsterVarer, Kategori
+FROM Vare
+WHERE UPPER(Kategori) LIKE '%BLOMSTER%'
+GROUP BY Kategori;
+
+
+-- Gruppebetingelse
+SELECT Kategori, COUNT(*) AS AntallVarer
+FROM Vare
+GROUP BY Kategori
+HAVING COUNT(*)>1;
+
+SELECT Kategori, COUNT(*) AS AntallVarer
+FROM Vare
+GROUP BY Kategori
+HAVING AntallVarer>1;

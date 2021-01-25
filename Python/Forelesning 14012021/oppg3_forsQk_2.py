@@ -18,10 +18,10 @@ while usortert:
         total+=1
     sortert+=[minste_tall]
     usortert.remove(minste_tall)
-    if usortert:
-        minste_tall=max(usortert)    
+    minste_tall=max(usortert)    
     total+=1
     i+=1
+
 
 print('Den sorterte listen er:',sortert)
 print('Algoritmen er kjørt',i,'ganger')

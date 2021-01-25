@@ -10,6 +10,7 @@ storste_tall=0
 i=0
 total=0
 
+
 while i !=len(usortert):
     for n in range(0,(len(usortert)-1)-i):   #kudos til @terje for den -i'en der asså! 
         if usortert[n]>=usortert[n+1]:

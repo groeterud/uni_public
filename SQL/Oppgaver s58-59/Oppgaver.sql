@@ -84,3 +84,44 @@ GROUP BY Land;
 SELECT Tittel, år, (EXTRACT(YEAR FROM CURDATE()) - år) AS AntallÅrSiden
 FROM film
 WHERE (EXTRACT(YEAR FROM CURDATE()) - år)>=60;
+
+
+
+-- Oppg2
+-- Hytte(_Nr_, Beskrivelse, AvstandAlpin, AntallSenger, Ukepris, Strøm, Dusj) 
+
+-- a) 
+SELECT Nr, Beksrivelse
+FROM Hytte
+WHERE AntallSenger>=4;
+
+
+-- b)
+SELECT *
+FROM Hytte
+WHERE (Strøm='J' AND Dusj='J')
+ORDER BY Ukepris ASC;
+
+-- c)
+SELECT AntallSenger, COUNT(AntallSenger) AS Kvanta 
+FROM Hytte
+GROUP BY AntallSenger;
+
+-- d)
+SELECT AVG(Ukepris) AS Gjennomsnitt
+FROM Hytte
+WHERE AntallSenger=4;
+
+-- e)
+SELECT *
+FROM HYTTE 
+WHERE AvstandAlpin<500;
+
+
+-- Oppgave 3 
+-- prøvde på LIKE '%[0-9]g', men den ville ikke returne så idk... 
+SELECT Betegnelse 
+FROM hobbyhusetkap2.vare
+WHERE (Betegnelse LIKE '%gr') OR
+	(Betegnelse LIKE '%g') OR
+    (Betegnelse LIKE '%stk');

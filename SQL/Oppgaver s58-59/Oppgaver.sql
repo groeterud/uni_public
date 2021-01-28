@@ -113,7 +113,7 @@ FROM Hytte
 WHERE AntallSenger=4;
 
 -- e) hytter med mindre enn 500m fra alpinbakkene. 
-SELECT *
+SELECT COUNT(*) AS AntallHytter
 FROM HYTTE 
 WHERE AvstandAlpin<500;
 

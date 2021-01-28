@@ -23,3 +23,22 @@ SELECT Stillingskode, MIN(Lønnstrinn) AS LavesteLønn, MAX(Lønnstrinn) AS Høy
 FROM Ansatt
 WHERE Stillingskode IS NOT NULL
 GROUP BY Stillingskode;
+
+
+-- Dobbelgruppering, viser alle unike kombinasjoner. 
+SELECT Stillingskode, Lønnstrinn
+FROM Ansatt
+GROUP BY Stillingskode, Lønnstrin;
+
+
+-- noe som lar oss telle antall treff i de unike kombinasjonene: 
+-- hvor mange ansatte pr stillingskode
+SELECT COUNT(*) AS Antall, Stillingskode, Lønnstrinn
+FROM Ansatt
+GROUP BY Stillingskode, Lønnstrinn;
+
+
+-- Oppsummering
+-- Gruppekriteriet: i SELECT-delen og GROUP BY
+-- Gruppebetingelse: HAVING
+-- COUNT(*) vs COUNT(kolonnenavn)

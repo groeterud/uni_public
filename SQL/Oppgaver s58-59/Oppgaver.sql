@@ -90,29 +90,29 @@ WHERE (EXTRACT(YEAR FROM CURDATE()) - år)>=60;
 -- Oppg2
 -- Hytte(_Nr_, Beskrivelse, AvstandAlpin, AntallSenger, Ukepris, Strøm, Dusj) 
 
--- a) 
+-- a) Nummer og beskrivelse for hytter med 4 senger eller fler, samt ukespris under 4500
 SELECT Nr, Beksrivelse
 FROM Hytte
-WHERE AntallSenger>=4;
+WHERE (AntallSenger>=4) 
+	AND (Ukepris<4500);
 
-
--- b)
+-- b) Hytter med strøm og dusj, sortert med stigende pris.
 SELECT *
 FROM Hytte
 WHERE (Strøm='J' AND Dusj='J')
 ORDER BY Ukepris ASC;
 
--- c)
+-- c) Antall hytter med 2 senger, antall med 3 etc. 
 SELECT AntallSenger, COUNT(AntallSenger) AS Kvanta 
 FROM Hytte
 GROUP BY AntallSenger;
 
--- d)
+-- d) Gjennomsnittlig ukespris for hytter med 4 senger
 SELECT AVG(Ukepris) AS Gjennomsnitt
 FROM Hytte
 WHERE AntallSenger=4;
 
--- e)
+-- e) hytter med mindre enn 500m fra alpinbakkene. 
 SELECT *
 FROM HYTTE 
 WHERE AvstandAlpin<500;

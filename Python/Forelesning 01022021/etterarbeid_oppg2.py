@@ -1,6 +1,6 @@
 def tell_rader(filnavn,kolonner):
     fil=open(filnavn,'r')
-
+    
     antall_linje=sum(1 for line in fil)
     print('Antallet linjer på fila er',antall_linje)
     fil.close()
@@ -9,16 +9,14 @@ def tell_rader(filnavn,kolonner):
 
 def lag_2d_liste(filnavn,kolonner):
     rader=tell_rader(filnavn,kolonner)
-    
     ansatte=[['' for c in range(kolonner)] for r in range(rader)]
-
     fil=open(filnavn,'r',encoding='utf-8')
 
     for r in range(rader):
         for c in range(kolonner):
             ansatte[r][c]=fil.readline().rstrip('\n')
+    
     fil.close()
-
     return(ansatte)
 
 def printListe(liste,kolonner):
@@ -34,17 +32,12 @@ def printUtvalg(liste,kolonner,rader,utvalg_en,utvalg_to,utvalg_tre,conditional=
             for c in range(kolonner):
                 if liste[r][c]==conditional:
                     print(liste[r][utvalg_en],liste[r][utvalg_to],liste[r][utvalg_tre])
-                    print()
-                    
+                    print()             
     else:
         if conditional==0:
             for r in range(rader):
                 print(liste[r][utvalg_en],liste[r][utvalg_to],liste[r][utvalg_tre])
                 print()
-
-                    
-    
-
 
 def main():
     kolonner=7

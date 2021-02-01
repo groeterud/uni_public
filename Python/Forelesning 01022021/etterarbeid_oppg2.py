@@ -1,6 +1,6 @@
 def tell_rader(filnavn,kolonner):
     fil=open(filnavn,'r')
-    
+
     antall_linje=sum(1 for line in fil)
     print('Antallet linjer på fila er',antall_linje)
     fil.close()
@@ -63,11 +63,11 @@ def main():
                 printUtvalg(studentListe,kolonner,rader,1,2,4)
             else:
                 if menyvalg==3:
-                    #parametere er: listenavn,kolonner,rader,kolonneutvalg#1,kolonneutvalg#2,kolonneutvalg#3,conditional(opt
+                    #parametere er: listenavn,kolonner,rader,kolonneutvalg#1,kolonneutvalg#2,kolonneutvalg#3,conditional(opt)
                     printUtvalg(studentListe,kolonner,rader,1,2,3,'F')
                 else: 
                     if menyvalg==4:
-                        #parametere er: listenavn,kolonner,rader,kolonneutvalg#1,kolonneutvalg#2,kolonneutvalg#3,conditional(opt
+                        #parametere er: listenavn,kolonner,rader,kolonneutvalg#1,kolonneutvalg#2,kolonneutvalg#3,conditional(opt)
                         printUtvalg(studentListe,kolonner,rader,1,2,5,'Bach IT og IS')
                     else:
                         if menyvalg==0:

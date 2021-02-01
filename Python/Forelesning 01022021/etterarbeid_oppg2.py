@@ -1,5 +1,3 @@
-from typing import TYPE_CHECKING
-
 def tell_rader(filnavn,kolonner):
     fil=open(filnavn,'r')
 

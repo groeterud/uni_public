@@ -1,5 +1,11 @@
 # Notater forelesning 1102
 
+## generell fremgangsmåte for datamodellereing.
+Fra konseptuell modell (analyse) til logisk datamodell.
+_"Dette er grunnlaget, den viktigste jobben. Resten er teknikk"_
+1. Finn de egentlige/rene entitetstypene. 
+2. Finn / bestem relasjonstypene. 
+3. Finn attributtene til de rene entitetstypene
 ## Mange til mange relasjonstype
 
 | Studentnr(PK) | Emnekode(PK) | Semester(PK) | Resultat | 
@@ -27,3 +33,8 @@ Ved en til mange (1:n) relasjoner i den konseptuelle modeller vil primærnøkkel
 
 **IKKE** erstatt gode sammensatte nøkler med generiske attributter bare fordi de er enklere. Dette betyr jo ogsås amtidig at når man innfører attributter som 'ansattID' så må vi også være sikker på at disse er nødvendige som identifikator.
 **SAMTIDIG** vil en sammensatt primærnøkkel ha innebygd verifisering av at dataene er unike. Dersom du erstatter en sammensatt primærnøkkel med en genereisk primærnøkkel / autonummer nøkkel så flytter du all kontroll på inn-data over fra databasesystemet over på applikasjonslaget, noe som nødvendigjør ytterligere arbeid og som åpner for potensielle feil. 
+
+
+## Relasjonsdatabaser vs relasjoner i datamodeller
+Disse har ikke noe med hverandre å gjøre utover å dele navn. 
+Relasjonsdatabaser er databaser bestående av normaliserte tabeller. En normalisert tabell er normalisert når den kan tikke av en to-tre ja/nei spørsmål. 

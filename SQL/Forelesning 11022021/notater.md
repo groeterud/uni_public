@@ -6,6 +6,8 @@ _"Dette er grunnlaget, den viktigste jobben. Resten er teknikk"_
 1. Finn de egentlige/rene entitetstypene. 
 2. Finn / bestem relasjonstypene. 
 3. Finn attributtene til de rene entitetstypene
+4. Finn attributtene til "relasjonstypene" ved (n:m) relasjonstyper + entitisering. 
+5. Normaliser = "vask" entititetsypene mot 1.-3. NF/BCNF s240-242
 ## Mange til mange relasjonstype
 
 | Studentnr(PK) | Emnekode(PK) | Semester(PK) | Resultat | 

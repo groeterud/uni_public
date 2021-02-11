@@ -22,4 +22,5 @@ En måte å tenke på dette er en å tenke over hvilke attributter som fører ti
 
 
 ## Primærnøkler (PK) og Fremmednøkler(FK)
-Når vi entitetiserer vil Primærnøkkelen i én-siden av relasjonen alltid bli en fremmednøkkel i mange-siden av relasjonen. 
+Når vi entitetiserer vil Primærnøkkelen i én-siden av relasjonen alltid bli en fremmednøkkel i mange-siden av relasjonen, selv om det evt er en sammensatt nøkkel. 
+Ved en til mange (1:n) relasjoner i den konseptuelle modeller vil primærnøkkelen i 1-delen være til stede i n-delen som en fremmednøkkel, men den vil bare være en del av primærnøkkelen i n-delen dersom det er en hensiktsmessig måte å identifisere entiteten på. 

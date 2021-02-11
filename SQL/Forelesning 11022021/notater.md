@@ -64,3 +64,6 @@ En datamodell er godt normalisert ("godt tilrettelagt for en relasjonsdatabase")
 **kandidatnøkkel** = mulig primærnøkkel
 
 For de fleste tilfller til 3NF ogsi gå BCNF, men det kan forekomme tilfeller med fullverdig 3NF, men som inneholder omvendt avledelse altså at en del av primærnøkkelen kan avledes fra en attributt. I disse tilfeller blir løsningen å flytte primærnøkkelne over til en egen entitet, med determinerende attributt som primærnøkkel. Denne primærnøkkelen blir oppgradert til fremmednøkkel i den originale entiteten og innlemmes som en del av primærnøkkelen. 
+
+## Skrive SQL Script for modellen.
+- Vi starter med tabeller som ikke har fremmednøkler. 

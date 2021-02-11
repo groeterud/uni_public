@@ -51,7 +51,16 @@ Det viktigste er at "de brukes atomisk" "fødselsnur er atomisk" selv om det kan
 Partiell avhengighet er når attributter kan avledes av deler av nøkkelen. Dvs at verdien på nøkkelen kan bestemmer verdien på attributter. 
 Eksemepelvis i Eksamensresultat(__\*Studentnr__,__\*Emnekode__,**Semester**,Emnenavn,Resultat) så vil _Emnenavn_ være avhengig av Emnekoden og bryter med 2NF. Emnenavn burde ligge i den entiteten hvor Emnekode er primærnøkkel
 
-## 3NF - Transitive avhengigheter / Determinant
+## 3NF - Transitive avhengigheter
 Brudd på 3NF er når en attributt kan avledes av et attributt som ikke er en nøkkel.  
 Eksempel gitt: Student(**Studentnr**,Fornavn,Etternavn,Gateadresse,Telefon,Postnr,Poststed,Kull)
 Med viten om hvordan postnummer er strukturert i Norge avledes poststed når man har informasjon om postnummeret. Selv om postnummeret ikke er en primær- eller fremmednøkkel. Og når iom at kombinasjonen postnr poststed ikke er unik, samt avledes vil man dobbeltlagre denne kombinasjonen av data ganske mange ganger.
+
+## Hovedregelen for Normalisering - Boyce-Codd (BCNF)
+En datamodell er godt normalisert ("godt tilrettelagt for en relasjonsdatabase") dersom:
+1. Alle attributtene er atomære (1NF)
+2. Enhver determinant er en **kandidatnøkkel**
+
+**kandidatnøkkel** = mulig primærnøkkel
+
+For de fleste tilfller til 3NF ogsi gå BCNF, men det kan forekomme tilfeller med fullverdig 3NF, men som inneholder omvendt avledelse altså at en del av primærnøkkelen kan avledes fra en attributt. I disse tilfeller blir løsningen å flytte primærnøkkelne over til en egen entitet, med determinerende attributt som primærnøkkel. Denne primærnøkkelen blir oppgradert til fremmednøkkel i den originale entiteten og innlemmes som en del av primærnøkkelen. 

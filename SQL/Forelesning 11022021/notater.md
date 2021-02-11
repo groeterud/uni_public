@@ -40,7 +40,8 @@ Disse har ikke noe med hverandre å gjøre utover å dele navn.
 Relasjonsdatabaser er databaser bestående av normaliserte tabeller. En normalisert tabell er normalisert når den kan tikke av en to-tre ja/nei spørsmål. 
 
 ## Normalisering av tabeller og normalform
-
+### Determinering
+Et attributt eller en gruppe av attributter som bestemmer / determinerer verdien av et annet attributt.
 ### 1NF - Atomærkravet 
 1. Attributtet skal ike kunne deles opp i flere deler
 2. Attributtet skal ikke repeteres
@@ -51,6 +52,6 @@ Partiell avhengighet er når attributter kan avledes av deler av nøkkelen. Dvs 
 Eksemepelvis i Eksamensresultat(__\*Studentnr__,__\*Emnekode__,**Semester**,Emnenavn,Resultat) så vil _Emnenavn_ være avhengig av Emnekoden og bryter med 2NF. Emnenavn burde ligge i den entiteten hvor Emnekode er primærnøkkel
 
 ## 3NF - Transitive avhengigheter / Determinant
-Et attributt eller en gruppe av attributter som bestemmer / determinerer verdien av et annet attributt.
 Brudd på 3NF er når en attributt kan avledes av et attributt som ikke er en nøkkel.  
-For eksempel post nr --> poststed. 
+Eksempel gitt: Student(**Studentnr**,Fornavn,Etternavn,Gateadresse,Telefon,Postnr,Poststed,Kull)
+Med viten om hvordan postnummer er strukturert i Norge avledes poststed når man har informasjon om postnummeret. Selv om postnummeret ikke er en primær- eller fremmednøkkel. Og når iom at kombinasjonen postnr poststed ikke er unik, samt avledes vil man dobbeltlagre denne kombinasjonen av data ganske mange ganger.

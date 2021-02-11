@@ -13,7 +13,13 @@
 Den konseptuelle datamodellen skal representere hvordan systemet virker i den virkelige verden. 
 Den logiske datamodellen er hvordan den fysiske databasen skal struktureres. Dette skal, og bør være forskjellig. 
 
+
+### Entitetisering
 Vi kan fint ha mange til mange relasjon i den konseptuelle modellen, mens i den logiske modellen er det nødvendig å konkretisere ned til slik at vi bare kan ha "en til en", eller "en til mange" relasjon.
 For å hindre mange til mange relasjon må vi introdusere en ny entitet med spesifike attributter som tillater oss å ha mange til en relasjon. Denne prosessen kaller vi for entitetisering. 
 
+En måte å tenke på dette er en å tenke over hvilke attributter som fører til "mange til mange" relasjon, og hvordan vi kan dra disse ut til en entitet som kan fungere som en bro mellom to entiteter fra den konseptuelle modellen. 
 
+
+## Primærnøkler (PK) og Fremmednøkler(FK)
+Når vi entitetiserer vil Primærnøkkelen i én-siden av relasjonen alltid bli en fremmednøkkel i mange-siden av relasjonen. 

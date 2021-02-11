@@ -2,7 +2,7 @@
 
 ## Mange til mange relasjonstype
 
-| **Studentnr** | **Emnekode** | **Semester** | Resultat | 
+| Studentnr(PK) | Emnekode(PK) | Semester(PK) | Resultat | 
 | --------- | -------- | -------- | -------- |
 | 1000 | PRG1000 | H2020 | F |
 | 2000 | PRG1000 | H2020 | B |

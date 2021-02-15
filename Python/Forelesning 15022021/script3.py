@@ -10,10 +10,10 @@ def hent_epost(event):
 
     funnet=False
     radnr=0
-    #finner eposten
+    #finner eposten tilhørende seleksjon
     while (funnet==False) and (radnr<=len(ansatte)-1):
         if valgt==ansatte[radnr][0]:
-            #setter eposten
+            #setter eposten i text-feltet tilhørende seleksjon
             epost_til.set(ansatte[radnr][2])
             funnet=True
         else:
@@ -48,20 +48,28 @@ for r in range(len(ansatte)):
 window=Tk()
 window.title('Ansatte')
 
+#legger til vertikal scrollbar
 y_scroll=Scrollbar(window,orient=VERTICAL)
 y_scroll.grid(row=0,column=2,rowspan=5,padx=(0,100),pady=5,sticky=NS)
 
-innhold_i_lst_ansatte=StringVar()
+#lager en listeboks.
+innhold_i_lst_ansatte=StringVar()   
+                                                                                #oppdaterer scrollbar om vi bruker scrollehjulet i vinduet
 lst_ansatte=Listbox(window,width=10,height=5,listvariable=innhold_i_lst_ansatte,yscrollcommand=y_scroll.set)
 lst_ansatte.grid(row=0,column=1,rowspan=5,padx=(100,0),pady=5,sticky=E)
-
+#hiver fornavn lista inn i listeboksen
 innhold_i_lst_ansatte.set(tuple(fornavn))
 
+#knytter opp scrollbaren til listeboksen, oppdaterer vinduet om vi endrer på scrollbare
 y_scroll["command"]=lst_ansatte.yview
 
+#lager text-felt
 epost_til=StringVar()
 ent_epost=Entry(window,width=30,state='readonly',textvariable=epost_til)
 ent_epost.grid(row=0,column=3,sticky=E)
+
+#trigger hent_epost() når noe er selektert i listeboksen. 
 lst_ansatte.bind("<<ListboxSelect>>",hent_epost)
 
+#initierer GUI
 window.mainloop()

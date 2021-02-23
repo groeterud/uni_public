@@ -9,14 +9,25 @@ def hent_pris_lager(event):
     pris_lager_markor.execute('SELECT Betegnelse,Pris,Antall FROM Vare')
 
     funnet=False
-    radnr=0
+    iterator=0
     #Finne riktig pris og varebeholdning
-    #prøv selv; While løkke
     
+    rader=pris_lager_markor.fetchall()
+    print(rader[iterator][0])
+
+    while (funnet==False) and (iterator<=len(rader)):
+        if valgt==rader[iterator][0]:
+            pris.set(rader[iterator][1])
+            lager.set(rader[iterator][2])
+            funnet=True
+        iterator+=1
+
+    ''' Gammel for løkke, gjort om til while løkke over... 
     for row in pris_lager_markor:
         if valgt==row[0]:
             pris.set(row[1])
             lager.set(row[2])
+    '''
         
     pris_lager_markor.close()
 

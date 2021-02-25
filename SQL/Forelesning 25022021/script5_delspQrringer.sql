@@ -4,6 +4,7 @@ USE Hobbyhuset;
 
 SELECT * FROM kunde;
 
+--lmao
 
 -- Hvem har "bestilt varer"? dvs minst en ordre
 SELECT * FROM ordre;

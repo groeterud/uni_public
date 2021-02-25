@@ -73,5 +73,19 @@ FROM Telefonliste
 INSERT INTO Postkatalog VALUES ('7800','Namsos');
 
 -- KJØRBAR?  NIX, lar seg ikke kjøre uten av vi kjører inserten over
-INSERT INTO Telefonliste (Mobilnr,Fornavn,Postnr) VALUES ('44444444','Kari','7800')
+INSERT INTO Telefonliste (Mobilnr,Fornavn,Postnr) VALUES ('44444444','Kari','7800');
 
+
+
+-- Vi lager en VIEW 
+DROP VIEW IF EXISTS Brukere;
+
+CREATE VIEW Bukere(Fornavn, Telefonnr, epost, Postnummer, Poststed) AS(
+    SELECT Fornavn,Mobilnr,epost,telefonliste.Postnr,Poststed
+    FROM Telefonliste 
+    INNER JOIN postkatalog
+        ON telefonliste.Postnr=postkatalog.Postnr
+);
+
+
+SELECT * FROM bukere;

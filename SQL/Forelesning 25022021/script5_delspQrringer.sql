@@ -45,3 +45,49 @@ SELECT * FROM GodeKunder;
 SELECT *, COUNT(Knr) AS Antall_kjop
 FROM ordre
 GROUP BY KNr;
+
+
+CREATE VIEW AntallKjop AS (
+    SELECT *, COUNT(Knr) AS Antall_kjop
+    FROM ordre
+    GROUP BY KNr
+);
+
+SELECT * FROM AntallKjop WHERE Antall_kjop>=10;
+
+CREATE VIEW Antall_kjop_over_ti AS (
+    SELECT *
+    FROM AntallKjop
+    WHERE Antall_kjop>=10
+);
+
+SELECT Kunde.KNr,Fornavn,Etternavn,Antall_kjop_over_ti.Antall_kjop
+FROM kunde,Antall_kjop_over_ti;
+
+DROP VIEW IF EXISTS Gullklubben;
+CREATE VIEW Gullklubben AS (
+    SELECT Kunde.KNr,Fornavn,Etternavn,Antall_kjop_over_ti.Antall_kjop
+    FROM kunde,Antall_kjop_over_ti
+    WHERE kunde.KNr=Antall_kjop_over_ti.KNr
+);
+
+SELECT * FROM Gullklubben;
+
+
+-- Andreas er lettere hjerneskadet. Se under for Terje sin gode løsning. 
+SELECT KNr, COUNT(*) AS antall_kjop, Fornavn,Etternavn
+FROM ordre JOIN 
+    kunde USING (KNr)
+GROUP BY KNr HAVING antall_kjop>9
+ORDER BY antall_kjop DESC;
+
+
+CREATE VIEW Gullklubben_Terje AS (
+   SELECT KNr, COUNT(*) AS antall_kjop, Fornavn,Etternavn
+    FROM ordre JOIN 
+        kunde USING (KNr)
+    GROUP BY KNr HAVING antall_kjop>9
+    ORDER BY antall_kjop DESC
+);
+
+SElECT * FROM Gullklubben_Terje;

@@ -1,0 +1,15 @@
+0001
+Fido
+Cocker Spaniel
+11111111
+2021-05-08
+0002
+Einar
+Terrier
+22222222
+20201230
+3
+John Oliver
+Kjøter
+88888888
+2021-05-13

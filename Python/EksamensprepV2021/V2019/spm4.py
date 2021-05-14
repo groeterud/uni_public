@@ -52,7 +52,6 @@ def finn_eier(e):
     valgt=lbox_hunder.get(lbox_hunder.curselection())
 
     for x in range(len(hunder_id)):
-
         if valgt[0]==hunder_id[x]:
             for i in range(len(eierliste)):
                 if hunder_id[x+1]==eierliste[i][0]:

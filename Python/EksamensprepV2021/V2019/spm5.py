@@ -1,8 +1,6 @@
 from tkinter import *
 from datetime import date
 
-
-
 EIERFIL='kunde.txt'
 HUNDEFIL='hund.txt'
 
@@ -48,10 +46,6 @@ def lagre():
     f.write(today+'\n')
 
     f.close()
-
-    
-
-
 
 ##GUI
 window=Tk()

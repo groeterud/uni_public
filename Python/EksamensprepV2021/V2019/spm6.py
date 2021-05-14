@@ -13,9 +13,10 @@ def ny_hund():
             '''
         today=date.today()
         today=today.strftime('%Y-%m-%d')
-        data=(hund_rase_SV.get(),hund_rase_SV.get(),kunde_mobilnr_SV.get(),today)
+        data=(hund_navn_SV.get(),hund_rase_SV.get(),kunde_mobilnr_SV.get(),today)
 
         lagreMarkor.execute(qry,data)
+        dogStore.commit()
         lagreMarkor.close()
 
     #GUI STUFF

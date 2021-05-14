@@ -1,9 +1,15 @@
-from spm7 import Hund
+def pluss(tall1,tall2):
+    resultat=tall1+tall2
+    
+    return resultat
 
-tom_hund=Hund()
 
-print(tom_hund)
 
-tom_hund.set_hundeID('005')
+resultatliste=[]
 
-print(tom_hund)
+for x in range(0,10):
+    resultat=pluss(x,10)
+    resultatliste+=[resultat]
+
+print (resultatliste)
+

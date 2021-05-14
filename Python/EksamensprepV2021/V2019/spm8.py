@@ -19,7 +19,7 @@ def main():
         startdato=input_file.readline().rstrip('\n')
 
         hund=Hund(hundeID,hundenavn,rase,eier,startdato)
-
+        
         hunder+=[hund]
 
         hundeID=input_file.readline()
@@ -27,7 +27,7 @@ def main():
     input_file.close()
 
     output_file=open(FILENAME_PICK,'wb')
-
+    
     for x in range(len(hunder)):
         pickle.dump(hunder[x],output_file)
         print('DUMPED:\t',hunder[x])

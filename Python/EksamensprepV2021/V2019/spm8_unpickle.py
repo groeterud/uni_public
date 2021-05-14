@@ -6,7 +6,7 @@ FILENAME_PICK='hunder.dat'
 def main():
 
     end_of_file = False
-
+    alle_hunder=[]
     # Open the file.
     input_file = open(FILENAME_PICK, 'rb')
     # Read to the end of the file.
@@ -14,10 +14,8 @@ def main():
         try:
             # Unpickle the next object.
             hund = pickle.load(input_file)
-            #print objektet
-            print(hund)
-            #objektet 'husker' at det tilhører klassen og trenger ikke instansieres igjen.
-            print(hund.get_hundenavn())
+            #legg til i liste
+            alle_hunder+=[hund]
         except EOFError:
             # Set the flag to indicate the end
             # of the file has been reached.
@@ -25,4 +23,6 @@ def main():
     # Close the file.
     input_file.close()
 
+    for hund in alle_hunder:
+        print(hund.get_hundenavn())
 main()

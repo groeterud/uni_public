@@ -9,7 +9,7 @@ def lagre_seleksjon(e):
     global regnr
     regnr=seleksjon[0]
 
-def sjekk_duplikat(mobilnr):
+def sjekk_duplikat(telefonnr):
     duplikat=False
     duplikatmarkor=bdDatabase.cursor()
     duplikatmarkor.execute(
@@ -20,7 +20,7 @@ def sjekk_duplikat(mobilnr):
         '''
     )
     for row in duplikatmarkor:
-        if row[0]==mobilnr:
+        if row[0]==telefonnr:
             duplikat=True
     duplikatmarkor.close()
     return duplikat

@@ -27,7 +27,7 @@ public class Person {
 	}
 	//toString er en standard metode i OOP 
 	public String toString() {
-		return "Navn: " + navn +", alder: "+alder;
+		return "*************\nNavn: " + navn +"\nAlder: "+alder+"\n*************";
 	}
 }// end class
 

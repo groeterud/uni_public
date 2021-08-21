@@ -1,5 +1,7 @@
 package forelesning2008;
 
+import javax.swing.*;
+
 public class person_test {
 
 	public static void main(String[] args) {
@@ -9,12 +11,10 @@ public class person_test {
 		//Print P1 og P2
 		System.out.println(p1.toString());
 		System.out.println(p2.toString());
-		
-		p2.set_alder(29);
-		
-		System.out.println(p2.toString());
 
-		System.out.println(p2.get_alder());
+		String fornavn = JOptionPane.showInputDialog("Skriv et fornavn: ");
+		String etternavn = JOptionPane.showInputDialog("Skriv et etternavn: ");
+		Person_First_Last p = new Person_First_Last(fornavn, etternavn);
+		System.out.println(p.toString());
+		}
 	}
-
-}

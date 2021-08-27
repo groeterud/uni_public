@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2.8.1/2.8.1.iml" filepath="$PROJECT_DIR$/2.8.1/2.8.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.8.2/2.8.2 og 2.8.3.iml" filepath="$PROJECT_DIR$/2.8.2/2.8.2 og 2.8.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.8.5/2.8.5.iml" filepath="$PROJECT_DIR$/2.8.5/2.8.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.8.6/2.8.6.iml" filepath="$PROJECT_DIR$/2.8.6/2.8.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.8.8/2.8.8.iml" filepath="$PROJECT_DIR$/2.8.8/2.8.8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Divisjons_demo/Divisjons_demo.iml" filepath="$PROJECT_DIR$/Divisjons_demo/Divisjons_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Forelesning2708.iml" filepath="$PROJECT_DIR$/Forelesning2708.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kontrollstrukturer/Kontrollstrukturer.iml" filepath="$PROJECT_DIR$/Kontrollstrukturer/Kontrollstrukturer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Niklas/Niklas.iml" filepath="$PROJECT_DIR$/Niklas/Niklas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notes/notes.iml" filepath="$PROJECT_DIR$/notes/notes.iml" />
+    </modules>
+  </component>
+</project>

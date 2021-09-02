@@ -7,11 +7,13 @@ public class Fond {
     double last_year;
     double sum_skatt;
     double total_innsats;
-    public Fond (double rente,double innsats) {
+    boolean aksje;
+    public Fond (double rente,double innsats, boolean aksje) {
         this.rente=rente;
         this.innsats=innsats;
         this.verdi=innsats;
         this.last_year=0.00;
+        this.aksje=aksje;
     }
     public double getRente() {
         return rente;
@@ -37,10 +39,14 @@ public class Fond {
     }
     public double nyttÅr() {
         double profitt = verdi - last_year;
-        double skatt = profitt*0.22;//Du skal skatte 22% av årlig fortjeneste, selv om du ikke selger!
-        sum_skatt+=skatt;
-        last_year = verdi;
-        return skatt;
+        if (aksje==true) {
+            double skatt = profitt * 0.22;//Du skal skatte 22% av årlig fortjeneste, selv om du ikke selger!
+            sum_skatt += skatt;
+            verdi = verdi - skatt;
+            last_year = verdi;
+            System.out.println("Betalte kr: "+(int)skatt+" i skatt");
+        }
+        return profitt;
     }
     public void selg() {
         double sluttSkatt=0.3681; // når du selger skal du skatte av 36.81% av fortjeneste!

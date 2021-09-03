@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Datastrukturer/Datastrukturer.iml" filepath="$PROJECT_DIR$/Datastrukturer/Datastrukturer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Forelesning0309.iml" filepath="$PROJECT_DIR$/Forelesning0309.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KlasseDemo/KlasseDemo.iml" filepath="$PROJECT_DIR$/KlasseDemo/KlasseDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Oppgave1/Oppgave1.iml" filepath="$PROJECT_DIR$/Oppgave1/Oppgave1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Oppgave2/Oppgave2.iml" filepath="$PROJECT_DIR$/Oppgave2/Oppgave2.iml" />
+    </modules>
+  </component>
+</project>

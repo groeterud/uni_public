@@ -18,6 +18,11 @@ public class Grensesnitt {
                     ALTERNATIVER[0] // Default alternativ
             );
             System.out.println(valg);
+            switch (valg) {
+                case 0:
+                    
+
             }
         }
     }
+}

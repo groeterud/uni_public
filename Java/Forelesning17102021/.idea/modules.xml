@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arealer/Arealer.iml" filepath="$PROJECT_DIR$/Arealer/Arealer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Forelesning17102021.iml" filepath="$PROJECT_DIR$/Forelesning17102021.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kjøretøy/Kjøretøy.iml" filepath="$PROJECT_DIR$/Kjøretøy/Kjøretøy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoInterface/demoInterface.iml" filepath="$PROJECT_DIR$/demoInterface/demoInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoKommunikasjonKlasser/demoKommunikasjonKlasser.iml" filepath="$PROJECT_DIR$/demoKommunikasjonKlasser/demoKommunikasjonKlasser.iml" />
     </modules>
   </component>
 </project>

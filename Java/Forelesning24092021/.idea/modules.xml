@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Forelesning24092021.iml" filepath="$PROJECT_DIR$/Forelesning24092021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamiskeArrays/dynamiskeArrays.iml" filepath="$PROJECT_DIR$/dynamiskeArrays/dynamiskeArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/equals og compareTo/equals og compareTo.iml" filepath="$PROJECT_DIR$/equals og compareTo/equals og compareTo.iml" />
+    </modules>
+  </component>
+</project>

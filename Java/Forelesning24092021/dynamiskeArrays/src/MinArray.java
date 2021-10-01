@@ -1,4 +1,4 @@
-public class MinArray {
+public class MinArray<Type>{
     private int lengde = 2;
     private Object[] tabell = new Object[lengde];
     private int antall = 0;
@@ -20,7 +20,7 @@ public class MinArray {
         tabell=temp;
     }
     public Object getObject(int indeks) {
-        return tabell[indeks];
+        return (Type) tabell[indeks];
     }
     public Object[] getInnhold() {
         return tabell;

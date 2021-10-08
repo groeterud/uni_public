@@ -13,6 +13,9 @@ public class TestKlient {
         kontroll.nyttKjøretøy(l);
         kontroll.sorter();
 
+        System.out.println(kontroll.finnKjøretøy("SV1234"));
+
+
         ArrayList kjøretøy = kontroll.getList();
 
         for (int i = 0; i < kjøretøy.size(); i++) {

@@ -1,4 +1,4 @@
-public class Kjøretøy {
+public class Kjøretøy implements Comparable<Kjøretøy>{
     String regnr;
     String produsent;
     String modell;
@@ -53,6 +53,9 @@ public class Kjøretøy {
 
     public int compareTo(Kjøretøy o) {
         return this.regnr.compareTo(o.getRegnr());
+    }
+    public boolean equals(Kjøretøy o) {
+        return this.regnr.equals(o.getRegnr());
     }
 
     @Override

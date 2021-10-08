@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Kontroll {
-    ArrayList<Kjøretøy> kjøretøy = new ArrayList<>();
+    private ArrayList<Kjøretøy> kjøretøy = new ArrayList<>();
 
 /*
  Klassen skal ha metoder for å sette inn et nytt objekt, finne objekter,

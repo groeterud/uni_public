@@ -44,7 +44,6 @@ public class Kjøretøy implements Comparable<Kjøretøy>{
         return "Kjøretøy{" +
                 "regnr='" + regnr + '\'' +
                 ", modell='" + modell + '\'' +
-                ", eier=" + eier +
                 '}';
     }
 }

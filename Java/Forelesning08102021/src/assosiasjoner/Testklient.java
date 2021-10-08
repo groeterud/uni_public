@@ -3,6 +3,9 @@ package assosiasjoner;
 import java.util.ArrayList;
 
 public class Testklient {
+    /*
+
+
     public static void main(String[] args) {
         Kontroll kontroll = new Kontroll();
 
@@ -20,5 +23,8 @@ public class Testklient {
             Person p = personer.get(i);
             System.out.println(p.toString());
         }
+
     }
+
+     */
 }

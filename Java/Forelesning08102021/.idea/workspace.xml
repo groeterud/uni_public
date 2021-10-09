@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d820696-d893-4dec-8115-f19e3e7ceae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Kjøretøy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Kjøretøy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Kontroll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Kontroll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Testklient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Forelesning08102021/assosiasjoner/Testklient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assosiasjoner/Kjøretøy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assosiasjoner/Kjøretøy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assosiasjoner/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assosiasjoner/Kontroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assosiasjoner/Testklient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assosiasjoner/Testklient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

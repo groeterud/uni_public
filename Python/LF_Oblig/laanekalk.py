@@ -3,7 +3,7 @@ class LaaneKalkulator:
         self.__egenkap=egenkap
         self.__inntekt=inntekt
         self.__kjopesum=kjopesum
-        self.__laanesum=kjopesum-egenkap
+        self.__laanesum=kjopesum-self.__egenkap
     
     def get_egenkap(self):
         return self.__egenkap
@@ -11,8 +11,9 @@ class LaaneKalkulator:
         return self.__inntekt
     def get_kjopesum(self):
         return self.__kjopesum
-    def set_kjopesum(self,laanesum):
-        self.__kjopesum=laanesum
+    def set_kjopesum(self,kjopesum):
+        self.__kjopesum=kjopesum
+        self.__laanesum=self.__kjopesum-self.__egenkap
         
     def set_egenkap(self,egenkap):
         self.__egenkap=egenkap

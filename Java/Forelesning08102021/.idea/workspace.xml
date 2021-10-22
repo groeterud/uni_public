@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d820696-d893-4dec-8115-f19e3e7ceae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/forelesning22102021.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/oppgaver08102021.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Grensesnitt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Kjøretøy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Kontroll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Postadresse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../forelesning22102021/oppgaver08102021/src/assosiasjoner/Testklient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Forelesning17102021/.idea/dbnavigator.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="Application.Program">

@@ -72,4 +72,12 @@ public class Kontroll {
     public ArrayList<Kjøretøy> getKjøretøyer() {
         return kjøretøyliste;
     }
+
+    public Object finnObjekt(String search) {
+        Postadresse PA = finnPA(search);
+        if (PA != null) return PA;
+        Kjøretøy k = finnKjøretøyBinært(search);
+        if (k != null) return k;
+        return null;
+    }
 }

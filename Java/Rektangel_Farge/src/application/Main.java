@@ -1,7 +1,6 @@
 package application;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
@@ -26,8 +25,8 @@ public class Main extends Application {
     RadioButton rb_blue;
     RadioButton rb_yellow;
 
-    ComboBox<String> list;
-    String[] opts = {"RED","BLUE","YELLOW"};
+    ComboBox<String> fargevalg;
+    String[] fargene = {"RED","BLUE","YELLOW"};
     @Override
     public void start(Stage primaryStage) {
         BorderPane root = new BorderPane();
@@ -66,18 +65,18 @@ public class Main extends Application {
         //add to VBox
         left.getChildren().addAll(rb_red,rb_blue,rb_yellow);
 
-        list = new ComboBox<String>();
-        list.getItems().addAll(opts);
-        list.setValue("FARGE");
-        list.setOnAction(e -> behandleValg());
+        fargevalg = new ComboBox<String>();
+        fargevalg.getItems().addAll(fargene);
+        fargevalg.setValue("FARGE");
+        fargevalg.setOnAction(e -> behandleValg());
 
-        right.getChildren().addAll(list);
+        right.getChildren().addAll(fargevalg);
 
         primaryStage.show();
     }
 
     private void behandleValg() {
-        String valg = list.getValue();
+        String valg = fargevalg.getValue();
         switch (valg) {
             case "RED":
                 setColorRed();
@@ -93,7 +92,7 @@ public class Main extends Application {
 
     private void setColorYellow() {
         rectangle.setFill(Color.YELLOW);
-        list.setValue("YELLOW");
+        fargevalg.setValue("YELLOW");
         rb_red.setSelected(false);
         rb_blue.setSelected(false);
         rb_yellow.setSelected(true);
@@ -102,7 +101,7 @@ public class Main extends Application {
 
     private void setColorBlue() {
         rectangle.setFill(Color.BLUE);
-        list.setValue("BLUE");
+        fargevalg.setValue("BLUE");
         rb_red.setSelected(false);
         rb_blue.setSelected(true);
         rb_yellow.setSelected(false);
@@ -111,7 +110,7 @@ public class Main extends Application {
 
     private void setColorRed() {
         rectangle.setFill(Color.RED);
-        list.setValue("RED");
+        fargevalg.setValue("RED");
         rb_red.setSelected(true);
         rb_blue.setSelected(false);
         rb_yellow.setSelected(false);

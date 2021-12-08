@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Grensesnitt {
     private final String[] ALTERNATIV = {"veiprosjekt","byggeprosjekt"};
@@ -35,12 +36,17 @@ public class Grensesnitt {
     }
 
     public void nyttByggeProsjekt() {
-        int prosjektnr = Integer.parseInt(JOptionPane.showInputDialog("Prosjektnr?"));
-        String type = JOptionPane.showInputDialog("Hvordan type byggeprosjekt?");
-        double budsjett = Double.parseDouble(JOptionPane.showInputDialog("Hva er prosjektets budsjettramme?"));
-        String adresse = JOptionPane.showInputDialog("Hva er bygningens adresse?");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Prosjektnr");
+        int prosjektnr = Integer.parseInt(input.next());
+        System.out.println("Hvordan type byggeprosjekt?");
+        String type = input.next();
+        System.out.println("Hva er prosjektets budsjettramme?");
+        double budsjett = Double.parseDouble(input.next());
+        System.out.println("Hva er bygningens adresse?");
+        String adresse = input.next();
         if (kontroll.regByggProsjekt(prosjektnr,type,budsjett,false,adresse)) JOptionPane.showMessageDialog(null,"Prosjektet er registrert");
-        else JOptionPane.showMessageDialog(null, "Noe gikk galt");
+        else System.out.println("Noe gikk galt");
     }
 
     public void nyttAnbud() {

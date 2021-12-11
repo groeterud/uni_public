@@ -58,6 +58,7 @@ public class Prosjekt implements Comparable<Prosjekt>{
         }
         return false;
     }
+
     public Anbud storsteAnbud() {
         Collections.sort(anbud);
         return anbud.get(0);

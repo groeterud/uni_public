@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
+// public abstract class Reise { Klassen var abstrakt før oppgave 4.
 public class Reise implements Comparable<Reise>{
     private int reisenummer;
     private String avreise;

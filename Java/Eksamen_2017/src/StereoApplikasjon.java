@@ -42,16 +42,20 @@ public class StereoApplikasjon {
         else System.out.println("Fant ingen enhet med det serienummeret");
     }
 
+    public ArrayList<Stereoutstyr> finnPassende(int serienummer) {
+        Stereoutstyr s = finnEnhetBIN(serienummer);
+        ArrayList<Stereoutstyr> passendeUtstyr = s.getPassendeProdukter();
+        return passendeUtstyr;
+    }
+
     public void visPassende() {
         int serienummer = Integer.parseInt(JOptionPane.showInputDialog("Serienummeret å søke på: "));
-        Stereoutstyr s = finnEnhetBIN(serienummer);
 
-        ArrayList<Stereoutstyr> passendeUtstyr = s.getPassendeProdukter();
+        ArrayList<Stereoutstyr> passendeUtstyr = finnPassende(serienummer);
 
-        System.out.println("Viser passende produkter for"+s.toString()+"\n");
-
-        for (Stereoutstyr passende : passendeUtstyr) {
-            System.out.println(passende.toString());
+        for (Stereoutstyr stereoutstyr : passendeUtstyr) {
+            System.out.println(stereoutstyr.toString());
         }
+
     }
 }

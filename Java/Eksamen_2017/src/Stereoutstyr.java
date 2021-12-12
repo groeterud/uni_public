@@ -6,11 +6,14 @@ public class Stereoutstyr implements Comparable<Stereoutstyr>{
     private String EAN;
     private ArrayList<Stereoutstyr> passendeProdukter = new ArrayList<>();
 
-    public Stereoutstyr(Integer serienummer, String produktnavn, String EAN, ArrayList<Stereoutstyr> passendeProdukter) {
+    public Stereoutstyr(Integer serienummer, String produktnavn, String EAN) {
         this.serienummer = serienummer;
         this.produktnavn = produktnavn;
         this.EAN = EAN;
-        this.passendeProdukter = passendeProdukter;
+    }
+
+    public void nyttPassendeProdukt(Stereoutstyr s) {
+        passendeProdukter.add(s);
     }
 
     public int getSerienummer() {
@@ -40,7 +43,7 @@ public class Stereoutstyr implements Comparable<Stereoutstyr>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stereoutstyr that = (Stereoutstyr) o;
-        if (this.serienummer== that.getSerienummer()) return true;
+        if (this.serienummer==that.getSerienummer()) return true;
         return false;
     }
 

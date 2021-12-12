@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Forsterker extends Stereoutstyr{
     private int antallWatt;
 
-    public Forsterker(int serienummer, String produktnavn, String EAN, ArrayList<Stereoutstyr> passendeProdukter, int antallWatt) {
-        super(serienummer, produktnavn, EAN, passendeProdukter);
+    public Forsterker(int serienummer, String produktnavn, String EAN, int antallWatt) {
+        super(serienummer, produktnavn, EAN);
         this.antallWatt = antallWatt;
     }
 

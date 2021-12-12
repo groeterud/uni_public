@@ -40,11 +40,14 @@ public class Stereoutstyr implements Comparable<Stereoutstyr>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stereoutstyr that = (Stereoutstyr) o;
-        return EAN.equals(that.EAN);
+        if (this.serienummer== that.getSerienummer()) return true;
+        return false;
     }
 
     @Override
     public int compareTo(Stereoutstyr o) {
-        return this.EAN.compareTo(o.getEAN());
+        if (this.serienummer>o.getSerienummer()) return 1;
+        if (this.serienummer<o.getSerienummer()) return -1;
+        return 0;
     }
 }

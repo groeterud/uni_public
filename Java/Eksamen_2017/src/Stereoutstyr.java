@@ -43,8 +43,7 @@ public class Stereoutstyr implements Comparable<Stereoutstyr>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Stereoutstyr that = (Stereoutstyr) o;
-        if (this.serienummer==that.getSerienummer()) return true;
-        return false;
+        return serienummer == that.serienummer;
     }
 
     @Override

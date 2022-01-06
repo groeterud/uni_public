@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Test Scores</title>
+    <script>
+        let entry;
+        let average;
+        let total = 0;
+
+        //get 3 scores from the user and add them together
+        entry = prompt("Enter test score 1");
+        entry = parseInt(entry);
+        let score1= entry;
+        total+=score1;
+
+        entry = prompt("Enter test score 2");
+        entry = parseInt(entry);
+        let score2=entry;
+        total+=score2;
+
+        entry = prompt("Enter test score 3");
+        entry = parseInt(entry);
+        let score3=entry;
+        total+=score3;
+        
+        //calc avg
+        average=parseInt(total/3);
+
+    </script>
+</head>
+<body>
+    <script>
+        document.write("<h1> Test Scores Application</h1>");
+        document.write(`Score 1 = ${score1}<br>
+        Score 2 = ${score2}<br>
+        Score 3 = ${score3}<br><br>
+        Average score = ${average} <br><br>`);
+    </script>
+    <h2>Thanks for using the Test Scores Application</h2>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Test Scores</title>
+    <script>
+        let average;
+        let total = 0;
+        const scores=[];
+
+        let runs = prompt("How many scores to enter? ");
+        runs = parseInt(runs)
+
+        for (let i = 0; i < runs; i++) {
+            let score = prompt(`Enter score #${i+1}`);
+            score = parseInt(score);
+            total+=score;
+            scores.push(score);            
+        }
+        //calc avg
+        average=parseInt(total/runs);
+    </script>
+</head>
+<body>
+    <script>
+        document.write("<h1> Test Scores Application</h1>");
+        for (let i = 0; i < scores.length; i++) {
+            const element = scores[i];
+            document.write(`Score ${i+1} = ${element}<br>`)   
+        }
+        document.write(`<br>Average score = ${average} <br><br>`);
+    </script>
+    <h2>Thanks for using the Test Scores Application</h2>
+</body>
+</html>

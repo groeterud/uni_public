@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script>
+        function validation() {
+            const forms = document.forms;
+            const regForm = forms['RegForm'];
+            let name = regForm['Name'];
+            let email = regForm['EMail'];
+            let phone = regForm['Telephone'];
+            let what = regForm['Subject'];
+            let password = regForm['Password'];
+            let address = regForm['Address'];
+
+            if (name.value == '') {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+
+            if (address.value == '') {
+                window.alert("Please enter your address");
+                address.focus();
+                return false;
+            }
+
+            if (email.value == '') {
+                window.alert("Please enter your email");
+                email.focus();
+                return false;
+            }
+
+            if (phone.value == '') {
+                window.alert("Please enter your telephone number.");
+                phone.focus();
+                return false;
+            }
+            if (password.value == '') {
+                window.alert("Please enter your password.");
+                password.focus();
+                return false;
+            }
+            if (what.selectedIndex < 1) {
+                alert("Please enter your course.");
+                what.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <style>
+        div {
+            box-sizing:border-box;
+            width: 100%;
+            border: 100px solid black;
+            float:left;
+            align-content: center;
+            align-items: center;
+        }
+        form {
+            margin: 0 auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <form name="RegForm" action="success.html" onsubmit="return validation()" method="post">
+        <p>name: <input type="text" name="Name" size="65"></p>
+        <br/>
+        <p>address: <input type="text" name="Address" size="65"></p>
+        <br/>
+        <p>E-mail Address: <input type="text" name="EMail" size="65"></p>
+        <br/>
+        <p>Password: <input type="text" name="Password" size="65"></p>
+        <br/>
+        <p>Telephone: <input type="text" name="Telephone" id="65"></p>
+        <br/>
+        
+        <p>
+            Course Selection
+            <select name="Subject">
+                <option>Select your Course</option>
+                <option>BTECH</option>
+                <option>BBBA</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+            </select>
+        </p>
+        <br/>
+        <br/>
+        <p>Comments: <textarea name="Comment" cols="55"></textarea></p>
+        <p>
+            <input type="submit" value="send" name="Submit">
+            <input type="reset" value="Reset" name="Reset">
+        </p>
+    </form>
+</body>
+</html>

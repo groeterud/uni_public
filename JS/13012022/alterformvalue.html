@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Alter form value</title>
+</head>
+<body>
+    <ul id="editable"></ul>
+
+    <form id="addElement">
+        <label>New list item: <input type="text" name="liContent" size="60"/></label>
+    </form>
+
+    <p><a id="clearList" href="#">Clear List</a></p>
+
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $("#clearList").click(function (event) {
+                event.preventDefault(); // prevents default action
+                $("#editable").empty(); // deletes the list items
+            });
+            $("#addElement").submit(function (event){
+                event.preventDefault();
+                $("#editable").append("<li>"+ $("#addElement input[name='liContent']").val() + "</li>");
+                $("#addElement input[name='liContent']").empty();
+            });
+            $(document).on('click', '#editable li', function () {
+                $(this).remove();
+            });
+    })
+    </script>
+</body>
+</html>

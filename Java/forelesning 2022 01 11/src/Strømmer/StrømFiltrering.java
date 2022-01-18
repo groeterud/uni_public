@@ -14,5 +14,7 @@ public class StrømFiltrering {
         samling.stream().sorted().forEach(x->System.out.println(x));
         System.out.println("Filtrerer på partall:");
         samling.stream().filter(x->x%2==0).forEach(x->System.out.println(x));
+        System.out.println("\n Filtrerer på Oddetall:");
+        samling.stream().filter(x->x%2!=0).forEach(x->System.out.println(x));
     }
 }

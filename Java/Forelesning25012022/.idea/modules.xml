@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinærTre/BinærTre.iml" filepath="$PROJECT_DIR$/BinærTre/BinærTre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoHashMap/DemoHashMap.iml" filepath="$PROJECT_DIR$/DemoHashMap/DemoHashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Forelesning25012022.iml" filepath="$PROJECT_DIR$/Forelesning25012022.iml" />
+    </modules>
+  </component>
+</project>

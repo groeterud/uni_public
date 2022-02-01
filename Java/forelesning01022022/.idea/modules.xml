@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/binaryfile/binaryfile.iml" filepath="$PROJECT_DIR$/binaryfile/binaryfile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/binærfil.iml" filepath="$PROJECT_DIR$/src/binærfil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo fillagring/demo fillagring.iml" filepath="$PROJECT_DIR$/demo fillagring/demo fillagring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/flat fil.iml" filepath="$PROJECT_DIR$/src/flat fil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forelesning01022022.iml" filepath="$PROJECT_DIR$/forelesning01022022.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objektdatabase/objektdatabase.iml" filepath="$PROJECT_DIR$/objektdatabase/objektdatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reldatabase/reldatabase.iml" filepath="$PROJECT_DIR$/reldatabase/reldatabase.iml" />
+    </modules>
+  </component>
+</project>

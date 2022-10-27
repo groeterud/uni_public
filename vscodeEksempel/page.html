@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some doc</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Some styles */
+        nav > ul > li {
+            list-style-type:none;
+            margin-left:1rem;
+            margin-right: 1rem;
+            background-color: lightgray;
+            padding: 1rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        nav > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav > ul > li:first-child {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li class="viktig-text">Meny</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <article class="container">
+        <h1>Hello!</h1>
+        <p>Some text</p>
+    </article>
+</body>
+</html>

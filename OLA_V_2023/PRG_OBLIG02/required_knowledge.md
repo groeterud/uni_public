@@ -3,7 +3,6 @@
 Her finnes en liste over hva du burde ha kontroll på før du starter på Oblig 02
 
 ## Generelt
-- [ ] Hva er en variabel?
 - [ ] Hva er en funksjon?
 - [ ] Hva er en innebygd metode?
 
@@ -13,9 +12,10 @@ Her finnes en liste over hva du burde ha kontroll på før du starter på Oblig 
 - [ ] Hva er en for-løkke?
 
 ## Datatyper
-- [ ] Hva er en streng?
 - [ ] Hva er en liste?
 - [ ] Hva er en dictionary?
+- [ ] To-dimensjonale-lister/tabeller
+- [ ] Kombinere lister og tabeller
 
 ## Funksjoner
 - [ ] Hva er et parameter?
@@ -25,7 +25,7 @@ Her finnes en liste over hva du burde ha kontroll på før du starter på Oblig 
 ## Innlesing og skriving
 - [ ] Hvordan koble seg til en database?
 - [ ] Hvordan lese fra databasen?
-- [ ] Hvordan skrive til en tabell i databsen?
+- [ ] Hvordan skrive til en tabell i databasen?
 
 ## Importering og innlesning av moduler
 - [ ] Hva er en modul?
@@ -40,12 +40,13 @@ Her finnes en liste over hva du burde ha kontroll på før du starter på Oblig 
 - [ ] Hvordan lage en tekstboks?
 - [ ] Hvordan lage en label?
 - [ ] Hvordan lage en meny?
-- [ ] Hvordan lese og skrive til GUI?
+- [ ] Hvordan lese og skrive til GUI (gettere og settere?
 - [ ] Hvordan fungerer Grid?
 
 ## Database
 - [ ] Hvordan lage en database?
-- [ ] Hvordan lage en tabell i databsen?
-- [ ] Hvordan legge til data i en tabell i databsen?
-- [ ] Hvordan lese data fra en tabell i databsen (SQL Spørringer)?
+- [ ] Hvordan lage en tabell i databasen? (Basert på oppgaveteksten)
+- [ ] Hvordan legge til data i en tabell i databasen? (Gode testdata!)
+- [ ] Hvordan lese data fra en tabell i databasen (SQL Spørringer)?
 - [ ] Primær- og fremmednøkler
+- [ ] Hvordan lage bruker og gi den korrekte rettigheter? (Basert på oppgaveteksten)

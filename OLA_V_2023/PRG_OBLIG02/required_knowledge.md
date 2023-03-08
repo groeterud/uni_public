@@ -32,7 +32,7 @@ Her finnes en liste over hva du burde ha kontroll på før du starter på Oblig 
 - [ ] Hvordan installere en modul? 
 - [ ] Hvordan importere en modul?
 - [ ] Hvorfor bruke en modul? (OBS: Kan være ting som ikke er lov å bruke i Oblig 02)
-- [ ] Hvordan lese dokumentasjonen til en modul? (OBS: Kan være ting som ikke er lov å bruke i Oblig 02)
+- [ ] Hvordan lese dokumentasjonen til en modul? 
 
 ## TKinter
 - [ ] Hvordan lage en enkel GUI?
